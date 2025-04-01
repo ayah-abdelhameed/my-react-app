@@ -93,3 +93,7 @@ button{
   color: black;
   border-radius: 0;
 }
+
+#root{
+  margin: 0 auto;
+}
