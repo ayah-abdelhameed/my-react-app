@@ -8,12 +8,12 @@ export default function App() {
 
   return (
     <>
-      <Square />
+      <Board />
     </>
   )
 }
 
-export function Square() {
+export function Board() {
   return (
     <>
     <div className="board-row">
