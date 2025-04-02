@@ -13,6 +13,10 @@ export default function App() {
   )
 }
 
+function Square({value}) {
+  return <button className="square">{value}</button>;
+}
+
 export function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
   return (
@@ -37,16 +41,3 @@ export function Board() {
 }
 
 
-function Square() {
-  const [value, setValue] = useState(null);
-
-  function handleClick() {
-    setValue('X');
-  }
-
-  return (
-    <button className="square" onClick={handleClick}>
-      {value}
-    </button>
-  );
-}
